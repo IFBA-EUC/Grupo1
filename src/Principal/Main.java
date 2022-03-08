@@ -10,12 +10,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        //Recomendo criar classes para os repositórios. Uma classe para cada
         Scanner entrada = new Scanner (System.in);
         HashMap<String, Cliente> clientes = new HashMap<String, cliente>();
         HashMap<String, Fornecedor> fornecedores = new HashMap<String, fornecedor>();
         HashMap<String, Vendas> vendas = new HashMap<String, vendas>();
         HashMap<String, Mercadoria> mercadoria = new HashMap<String, mercadoria>();
         int numero;
+
+
 
         System.out.println ("Olá, seja bem-vindo(a) ao programa controle de vendas!");
         System.out.println ("Escolha uma opção: ");
@@ -45,12 +48,24 @@ public class Main {
                 NovoCliente.setEndereco(entrada.next());
                 System.out.println ("cliente cadastrado com sucesso!");
                 clientes.put( NovoCliente.getCPF(), NovoCliente);
+                //Exemplo Deletar
+                clientes.remove(NovoCliente.getCPF());
                 break;
 
             case 2:
                 System.out.println ("Faça a alteração nos dados do cliente.");
-                // AJeitar!
-                cliente.alteracao();
+                //Listar CLientes para o usuário escolher
+                //Fazer foreach para isso
+                for (:
+                     ) {
+
+                }
+                //Seleciona o objeto específico de alteração
+                Cliente recuperado = clientes.get(NovoCliente.getCPF());
+                //Altera o objeto específico no hashmap
+                //- Remove o atual e inclue o novo
+                clientes.remove(NovoCliente.getCPF());
+                clientes.put(NovoCliente.getCPF(), NovoCliente);
                 System.out.println ("A alteração nos dados do cliente concluida");
                 break;
 

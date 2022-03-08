@@ -27,7 +27,7 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public static void alteracao () {
+    public void alteracao () {
 
         Scanner entrada = new Scanner (System.in);
         System.out.println ("Digite o nome do cliente que deseja fazer a modifica��o:");
